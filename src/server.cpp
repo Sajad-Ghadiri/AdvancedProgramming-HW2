@@ -54,6 +54,7 @@ double Server::get_wallet( std::string _id ) const
 
 bool Server::parse_trx(std::string trx, std::string& sender, std::string& receiver, double& value)
 {
+    
     size_t i{};
     int cnt{};
     size_t first_dash{trx.find('-',i)} ;
@@ -73,16 +74,9 @@ bool Server::parse_trx(std::string trx, std::string& sender, std::string& receiv
 }
 
 
-
+/*
 bool Server::add_pending_trx(std::string trx, std::string signature)
 {
-    std::string sender{};
-    std::string receiver{};
-    double val{};
-    bool identifier{};
-    identifier = parse_trx( trx, sender , receiver , val);
-    if(identifier == false)
-        return false ;
-    if(get_client(sender) == nullptr  || get_client(receiver) == nullptr)
-        return false ;
+    return true;
 }
+*/

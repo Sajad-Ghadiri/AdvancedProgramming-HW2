@@ -13,7 +13,7 @@ public:
 	std::string get_publickey() const {return public_key;}
 	double get_wallet() const;
 	std::string sign(std::string txt) const;
-	bool transfer_money(std::string receiver, double value) const;
+	bool transfer_money(std::string receiver, double value);
 
 	size_t generate_nonce();
 

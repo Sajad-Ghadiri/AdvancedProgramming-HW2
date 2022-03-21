@@ -22,7 +22,7 @@ std::string Client::sign(std::string txt) const
     return crypto::signMessage( private_key ,  txt) ;
 }
 
-bool transfer_money(std::string receiver, double value) const
+bool transfer_money(std::string receiver, double value) 
 {
-
+    return true ;
 }
